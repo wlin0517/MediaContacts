@@ -1,0 +1,19 @@
+﻿
+
+<b>Total Contacts:</b> {{pagination.totalRecords}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Page Size:</b> {{pagination.pageSize}} (records)
+
+
+<div class="gridStyle" ng-grid="gridOptions">
+    
+</div>
+
+<div>
+    <br/>
+    Current page:
+    <input type="number" min="1" max="{{ pagination.totalPages }}" ng-model="pagination.pageNumber" ng-change="loadContactPage()">of {{ pagination.totalPages }}
+    <p>
+        <button type="button" class="btn btn-success" ng-disabled="pagination.pageNumber == 1" ng-click="pagination.previousPage()">previous page</button>
+        <button type="button" class="btn btn-success" ng-disabled="pagination.pageNumber == pagination.totalPages" ng-click="pagination.nextPage()">next page</button>
+    </p>
+</div>
+

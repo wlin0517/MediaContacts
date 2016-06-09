@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>Media Contacts and Outlets</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" type="text/css" href="Content/ng-grid.css" />
+    <link rel="stylesheet" type="text/css" href="Content/style.css" />
+
+    <script src="Scripts/jquery-2.2.3.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/ng-grid.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+  
+    <script src="Model/ContactController.js"></script>
+    <script src="Model/myApp.js"></script>
+
+</head>
+<body ng-controller="ContactController">
+
+    <br />
+    <p>
+        <a href="#Home"> <b>Home</b></a>
+        <br />
+        <a href="#Contact"><b>Display Media Contacts and Outlets</b></a>
+
+    </p>
+    <div ng-view>
+
+        <!--display contact data grid here here--> 
+
+    </div>
+
+</body>
+</html>
