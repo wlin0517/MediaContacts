@@ -9,7 +9,7 @@ namespace CustomerServer.Models
     {
         #region properties
 
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
 
         #endregion
